@@ -14,20 +14,17 @@ salario = float(input('Digite o salario atual do funcinario R$ '))
 
 if salario <= 280:
     a1 = salario + (salario * 0.20)
-    a11 = a1 - salario
-    print('O salario do funcionario era de {:.2f} e agora será de {:.2f}. O percentual utilizado é 20%, acrescentando {:.2f}'.format(salario, a1, a11))
+    novo = a1 - salario
 
 elif salario > 280 and salario <= 700:
-    a2 = salario + (salario * 0.15)
-    a21 = a2 - salario
-    print('O salario do funcionario era de {:.2f} e agora será de {:.2f}. O Percentual utilizado é 15%, ascrescentando {:.2f}'.format(salario, a2, a21))
+    a1 = salario + (salario * 0.15)
+    novo = a1 - salario
 
 elif salario > 700 and salario <= 1500:
-    a3 = salario + (salario * 0.10)
-    a31 = a3 - salario
-    print('O salario do funcionario era de {:.2f} e agora será de {:.2f}. O Percentual utilizado é 10%, ascrescentando {:.2f}'.format(salario, a3, a31))
+    a1 = salario + (salario * 0.10)
+    novo = a1 - salario
 
 else:
-    a4 = salario + (salario * 0.05)
-    a41 = a4 - salario
-    print('O salario do funcionario era de {:.2f} e agora será de {:.2f}. O Percentual utilizado é 5%, ascrescentando {:.2f}'.format(salario, a4, a41))
+    a1 = salario + (salario * 0.05)
+    novo = a1 - salario
+print('O salario do funcionario era de {:.2f} e agora será de {:.2f}. O Percentual utilizado é 5%, ascrescentando {:.2f}'.format(salario, a1, novo))
